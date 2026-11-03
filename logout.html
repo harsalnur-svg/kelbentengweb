@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logout - Kelurahan Benteng</title>
+    <!-- Redirect otomatis via HTML Meta jika JS mati -->
+    <meta http-equiv="refresh" content="0;url=login.html">
+</head>
+
+<body>
+    <!-- Script pembersihan data sesi lokal & redirect -->
+    <script>
+        // Hapus data login yang tersimpan di browser
+        localStorage.clear();
+        sessionStorage.clear();
+
+        // Arahkan pengguna ke halaman login.html
+        window.location.href = "login.html";
+    </script>
+</body>
+
+</html>
